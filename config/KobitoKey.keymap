@@ -46,7 +46,7 @@
 &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P
 &lt 1 E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &lt 2 H
 &lt 3 Z  &kp X  &kp C  &kp V  &kp SLASH  &kp G  &kp D  &kp M  &kp J  &lt 4 B
-&kp LSHFT  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI  &kp BSPC  &lt 1 ENTER  &mt RSHFT  &kp RALT  &none
+&kp LSHFT  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI  &kp BSPC  &lt 1 ENTER  &kp RSHFT  &kp RALT  &none
             >;
         };
 
