@@ -43,20 +43,20 @@
 
         default_layer {
             bindings = <
-&kp Q      &kp L     &kp U     &kp COMMA    &kp DOT    &kp F     &kp W        &kp R      &kp Y      &kp P
-&lt 1 E      &mt LCTRL I     &mt LALT A     &kp O        &mt LSHFT MINUS  &kp K     &kp T        &kp N      &kp S      &lt 2 H
-&lt 3 Z      &kp X     &kp C     &kp V        &kp SLASH  &kp G     &kp D        &kp M      &kp J      &lt 4 B
-&kp LCTRL  &kp LALT  &mt LSHFT LANG2  &kp SPACE  &kp LGUI  &kp BSPC  &lt 1 ENTER  &mt RSHFT LANG1  &kp RALT  &kp RCTRL
+&kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P
+&lt 1 E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &lt 2 H
+&lt 3 Z  &kp X  &kp C  &kp V  &kp SLASH  &kp G  &kp D  &kp M  &kp J  &lt 4 B
+&kp LSHFT  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI  &kp BSPC  &lt 1 ENTER  &mt RSHFT  &kp RALT  &none
             >;
         };
 
         layer1 {
             label = "SYMBOL&NUMBER";
             bindings = <
-&kp ESC    &kp LS(LBKT)  &kp LS(RBKT)  &none         &none         &kp LA(UP)    &kp N7  &kp N8     &kp N9  &kp LS(LA(DOWN))
-&kp TAB    &kp LS(N9)    &kp LS(N0)    &kp LS(APOS)  &kp APOS      &kp LA(DOWN)  &kp N4  &kp N5     &kp N6  &trans
-&trans     &kp LBKT      &kp RBKT      &kp SEMI      &kp LS(SEMI)  &kp N0        &kp N1  &kp N2     &kp N3  &kp RCTRL
-&trans     &trans        &trans        &trans        &trans        &kp BSPC      &trans  &trans     &trans  &trans
+&kp ESC  &kp LS(LBKT)  &kp LS(RBKT)  &none  &none  &kp LA(UP)  &kp N7  &kp N8  &kp N9  &kp LS(LA(DOWN))
+&kp TAB  &kp LS(N9)  &kp LS(N0)  &kp LS(APOS)  &kp APOS  &kp LA(DOWN)  &kp N4  &kp N5  &kp N6  &trans
+&trans  &kp LBKT  &kp RBKT  &kp SEMI  &kp LS(SEMI)  &kp N0  &kp N1  &kp N2  &kp N3  &kp RCTRL
+&trans  &trans  &trans  &trans  &trans  &kp BSPC  &trans  &trans  &trans  &trans
             >;
         };
 
