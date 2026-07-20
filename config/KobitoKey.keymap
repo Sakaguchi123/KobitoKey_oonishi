@@ -46,17 +46,17 @@
 &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P
 &lt 1 E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &lt 2 H
 &lt 3 Z  &kp X  &kp C  &kp V  &kp SLASH  &kp G  &kp D  &kp M  &kp J  &lt 4 B
-&kp LSHFT  &kp LALT  &kp LCTRL  &kp SPACE  &kp LGUI  &kp BSPC  &lt 1 ENTER  &kp RSHFT  &kp RALT  &none
+&kp LSHFT  &kp LALT  &mt LSHFT LANG2  &kp SPACE  &kp LGUI  &kp BSPC  &lt 1 ENTER  &mt RCTRL LANG1  &kp RALT  &kp LS(LGUI(LCTRL(N4)))
             >;
         };
 
         layer1 {
             label = "SYMBOL&NUMBER";
             bindings = <
-&kp ESC  &kp LS(LBKT)  &kp LS(RBKT)  &none  &none  &kp LA(UP)  &kp N7  &kp N8  &kp N9  &kp LS(LA(DOWN))
-&kp TAB  &kp LS(N9)  &kp LS(N0)  &kp LS(APOS)  &kp APOS  &kp LA(DOWN)  &kp N4  &kp N5  &kp N6  &trans
+&kp ESC  &kp LS(LBKT)  &kp LS(RBKT)  &none  &none  &kp C_VOL_UP  &kp N7  &kp N8  &kp N9  &kp LS(LA(DOWN))
+&kp TAB  &kp LS(N9)  &kp LS(N0)  &kp LS(APOS)  &kp APOS  &kp C_VOL_DN  &kp N4  &kp N5  &kp N6  &trans
 &trans  &kp LBKT  &kp RBKT  &kp SEMI  &kp LS(SEMI)  &kp N0  &kp N1  &kp N2  &kp N3  &kp RCTRL
-&trans  &trans  &trans  &trans  &trans  &kp BSPC  &trans  &trans  &trans  &trans
+&trans  &trans  &kp BSPC  &trans  &trans  &kp BSPC  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -83,8 +83,8 @@
                 layer4 {
                     label = "MOUSE";
                     bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &to 0  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp LALT  &kp LSHFT  &kp SPACE  &kp LGUI  &kp BSPC  &kp ENTER  &kp RSHFT  &to 0   &kp RALT
                     >;
