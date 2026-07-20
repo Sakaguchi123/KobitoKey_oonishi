@@ -63,9 +63,9 @@
         layer2 {
             label = "SYMBOL&ARROW";
             bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &none  &kp HOME  &kp UP  &kp END  &none
-&kp GRAVE  &kp UNDERSCORE  &kp EQUAL  &kp PLUS  &kp MINUS  &kp LG(LBKT)  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp PIPE  &kp BACKSLASH  &kp LG(RBKT)  &kp LG(W)  &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans
+&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LG(LBKT)  &kp HOME  &kp UP  &kp END  &none
+&kp GRAVE  &kp UNDERSCORE  &kp EQUAL  &kp PLUS  &kp MINUS  &kp LG(RBKT)  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp PIPE  &kp BACKSLASH  &trans  &kp LG(W)  &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans
 &trans  &trans  &trans  &trans  &trans  &kp DEL  &trans  &trans  &trans  &trans
             >;
         };
