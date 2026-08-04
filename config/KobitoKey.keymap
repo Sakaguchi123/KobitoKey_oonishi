@@ -15,24 +15,49 @@
     enable-eager-mode;
     suppress-movement;
 
-    mission_control {
+    arc_tab_up {
         pattern = <GESTURE_UP>;
-        bindings = <&kp LC(UP)>;
+        bindings = <&kp LA(LG(UP))>;
+    };
+
+    arc_tab_down {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LA(LG(DOWN))>;
     };
 
     browser_back {
-        pattern = <GESTURE_RIGHT>;
+        pattern = <GESTURE_LEFT>;
         bindings = <&kp LG(LBKT)>;
     };
 
     browser_forward {
-        pattern = <GESTURE_LEFT>;
+        pattern = <GESTURE_RIGHT>;
         bindings = <&kp LG(RBKT)>;
     };
 
-    show_desktop {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LC(DOWN)>;
+    arc_space_left {
+        pattern = <GESTURE_DOWN GESTURE_LEFT>;
+        bindings = <&kp LA(LG(LEFT))>;
+    };
+
+    arc_space_right {
+        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
+        bindings = <&kp LA(LG(RIGHT))>;
+    };
+
+    window_split_left {
+        pattern = <GESTURE_UP GESTURE_LEFT>;
+        bindings = <&kp LC(LEFT)>;
+    };
+
+    window_split_right {
+        pattern = <GESTURE_UP GESTURE_RIGHT>;
+        bindings = <&kp LC(RIGHT)>;
+    };
+
+    mission_control_open {
+        pattern = <GESTURE_UP GESTURE_DOWN>;
+        bindings = <&kp F1>;
     };
 };
 
@@ -71,7 +96,7 @@
         default_layer {
             bindings = <
 &kp Q  &kp L  &kp U  &kp COMMA  &kp DOT  &kp F  &kp W  &kp R  &kp Y  &kp P
-&lt 1 E  &kp I  &kp A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &lt 2 H
+&lt 1 E  &mt LCTRL I  &mt LALT A  &kp O  &kp MINUS  &kp K  &kp T  &kp N  &kp S  &lt 2 H
 &lt 3 Z  &kp X  &kp C  &kp V  &kp SLASH  &kp G  &kp D  &kp M  &kp J  &lt 4 B
 &kp LSHFT  &kp LALT  &mt LSHFT LANG2  &kp SPACE  &kp LGUI  &kp BSPC  &lt 1 ENTER  &mt RCTRL LANG1  &kp RALT  &kp LC(LG(LS(N4)))
             >;
