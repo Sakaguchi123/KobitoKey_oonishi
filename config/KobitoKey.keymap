@@ -11,19 +11,8 @@
 };
 
 &zip_mouse_gesture {
-    stroke-size = <300>;
     enable-eager-mode;
     suppress-movement;
-
-    arc_tab_up {
-        pattern = <GESTURE_UP>;
-        bindings = <&kp LA(LG(UP))>;
-    };
-
-    arc_tab_down {
-        pattern = <GESTURE_DOWN>;
-        bindings = <&kp LA(LG(DOWN))>;
-    };
 
     browser_back {
         pattern = <GESTURE_LEFT>;
@@ -35,29 +24,14 @@
         bindings = <&kp LG(RBKT)>;
     };
 
-    arc_space_left {
-        pattern = <GESTURE_DOWN GESTURE_LEFT>;
-        bindings = <&kp LA(LG(LEFT))>;
-    };
-
-    arc_space_right {
-        pattern = <GESTURE_DOWN GESTURE_RIGHT>;
-        bindings = <&kp LA(LG(RIGHT))>;
-    };
-
-    window_split_left {
-        pattern = <GESTURE_UP GESTURE_LEFT>;
-        bindings = <&kp LC(LEFT)>;
-    };
-
-    window_split_right {
-        pattern = <GESTURE_UP GESTURE_RIGHT>;
-        bindings = <&kp LC(RIGHT)>;
-    };
-
     mission_control_open {
-        pattern = <GESTURE_UP GESTURE_DOWN>;
+        pattern = <GESTURE_UP>;
         bindings = <&kp F1>;
+    };
+
+    close_window {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LG(W)>;
     };
 };
 
