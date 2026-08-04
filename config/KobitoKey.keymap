@@ -2,11 +2,38 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse-gesture.h>
 #include <dt-bindings/zmk/pointing.h>
 
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <280>;
+};
+
+&zip_mouse_gesture {
+    stroke-size = <300>;
+    enable-eager-mode;
+    suppress-movement;
+
+    mission_control {
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LC(UP)>;
+    };
+
+    browser_back {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LG(LBKT)>;
+    };
+
+    browser_forward {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LG(RBKT)>;
+    };
+
+    show_desktop {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LC(DOWN)>;
+    };
 };
 
 / {
@@ -83,7 +110,7 @@
                 layer4 {
                     label = "MOUSE";
                     bindings = <
-&trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &mkp MB1  &mouse_gesture_mkp 0 MB3  &mkp MB2  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp LALT  &kp LSHFT  &kp SPACE  &kp LGUI  &kp BSPC  &kp ENTER  &kp RSHFT  &to 0   &kp RALT

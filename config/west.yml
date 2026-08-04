@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/hsgw
     - name: caksoylar  # <-- led
       url-base: https://github.com/caksoylar  
+    - name: kot149
+      url-base: https://github.com/kot149
 
   projects:
     # ZMK 本体。公式の app/west.yml を取り込む
@@ -32,6 +34,11 @@ manifest:
     - name: zmk-rgbled-widget  # <-- led
       remote: caksoylar
       revision: v0.3
+
+    # Mouse Gesture
+    - name: zmk-mouse-gesture
+      remote: kot149
+      revision: v1
       
   self:
     path: config

@@ -68,6 +68,7 @@
 
     input-processors =
             <&sensor_rotation_left>,
+            <&zip_mouse_gesture>,
             <&zip_x_scaler 0 1>,
             <&zip_y_scaler 1 15>,
             <&zip_xy_to_scroll_mapper>,
@@ -88,6 +89,7 @@
 
     input-processors =
         <&sensor_rotation_right>,
+        <&zip_mouse_gesture>,
         <&zip_temp_layer 4 4000>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
 };
 
