@@ -110,7 +110,7 @@
                     label = "MOUSE";
                     bindings = <
 &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mouse_gesture_mkp 0 MB3  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans
+&trans  &trans  &trans  &trans  &trans  &kp LG(R)  &trans  &trans  &kp LSHFT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LALT  &trans
 &trans  &to 0  &kp LSHFT  &kp SPACE  &kp LGUI  &kp BSPC  &kp ENTER  &kp RCTRL  &to 0  &trans
                     >;
