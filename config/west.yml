@@ -10,6 +10,10 @@ manifest:
       url-base: https://github.com/caksoylar  
     - name: kot149
       url-base: https://github.com/kot149
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
+    - name: amgskobo
+      url-base: https://github.com/amgskobo
 
   projects:
     # ZMK 本体。公式の app/west.yml を取り込む
@@ -39,6 +43,16 @@ manifest:
     - name: zmk-mouse-gesture
       remote: kot149
       revision: v1
+
+    # Pointer acceleration
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
+      revision: main
+
+    # Scroll inertia
+    - name: zmk-input-inertia
+      remote: amgskobo
+      revision: main
       
   self:
     path: config
