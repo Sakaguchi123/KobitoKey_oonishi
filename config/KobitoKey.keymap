@@ -89,9 +89,9 @@
         layer2 {
             label = "SYMBOL&ARROW";
             bindings = <
-&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LG(LBKT)  &kp HOME  &kp UP  &kp END  &none
-&kp GRAVE  &kp UNDERSCORE  &kp EQUAL  &kp PLUS  &kp MINUS  &kp LG(RBKT)  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
-&kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp PIPE  &kp BACKSLASH  &trans  &kp LG(W)  &kp LA(LG(LEFT))  &kp LA(LG(RIGHT))  &trans
+&kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LA(LG(LEFT))  &kp HOME  &kp UP  &kp END  &none
+&kp GRAVE  &kp UNDERSCORE  &kp EQUAL  &kp PLUS  &kp MINUS  &kp LA(LG(RIGHT))  &kp LEFT  &kp DOWN  &kp RIGHT  &trans
+&kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp PIPE  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp DEL  &trans  &trans  &trans  &trans
             >;
         };
@@ -110,9 +110,9 @@
                     label = "MOUSE";
                     bindings = <
 &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mouse_gesture_mkp 0 MB3  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &to 0  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL  &kp LALT  &kp LSHFT  &kp SPACE  &kp LGUI  &kp BSPC  &kp ENTER  &kp RSHFT  &to 0   &kp RALT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LSHFT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LALT  &trans
+&trans  &to 0  &kp LSHFT  &kp SPACE  &kp LGUI  &kp BSPC  &kp ENTER  &kp RCTRL  &to 0  &trans
                     >;
                 };
             };
