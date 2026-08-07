@@ -54,10 +54,10 @@
         status = "okay";
         #input-processor-cells = <0>;
         input-type = <INPUT_EV_REL>;
-        min-factor = <800>;
-        max-factor = <3500>;
-        speed-threshold = <900>;
-        speed-max = <4500>;
+        min-factor = <850>;
+        max-factor = <2500>;
+        speed-threshold = <1200>;
+        speed-max = <5500>;
         acceleration-exponent = <1>;
         track-remainders;
     };
@@ -111,16 +111,16 @@
 };
 
 &zip_inertia {
-    trigger-ms = <30>;
+    trigger-ms = <35>;
 
     move-decay-factor-int = <85>;
     move-report-interval-ms = <35>;
     move-threshold-start = <30>;
     move-threshold-stop = <1>;
 
-    scroll-decay-factor-int = <84>;
+    scroll-decay-factor-int = <82>;
     scroll-report-interval-ms = <45>;
-    scroll-threshold-start = <1>;
+    scroll-threshold-start = <2>;
     scroll-threshold-stop = <0>;
     cancel-scroll-inertia-on-ctrl;
 };
