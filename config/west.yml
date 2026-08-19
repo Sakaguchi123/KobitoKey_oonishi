@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/kot149
     - name: mjmjm0101
       url-base: https://github.com/mjmjm0101
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov
 
   projects:
     # ZMK 本体。公式の app/west.yml を取り込む
@@ -45,6 +47,11 @@ manifest:
     # Scroll inertia
     - name: zmk-input-processor-scroll-inertia
       remote: mjmjm0101
+      revision: main
+
+    # Pointer acceleration
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
       revision: main
 
   self:
