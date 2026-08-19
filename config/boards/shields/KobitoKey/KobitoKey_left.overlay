@@ -48,6 +48,23 @@
 };
 
 / {
+    scroll_inertia_left: scroll-inertia-left {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+
+        axis = <1>;
+        start = <12>;
+        move = <24>;
+        release = <24>;
+
+        /* Match the 1/15 scroll scaling used by this keyboard. */
+        scale = <1>;
+        scale-div = <15>;
+        limit = <120>;
+        span = <2500>;
+        tick = <8>;
+    };
+
     sensor_rotation_left: sensor-rotation-left {
         compatible = "zmk,input-processor-sensor-rotation";
         status = "okay";
@@ -71,10 +88,11 @@
             <&sensor_rotation_left>,
             <&zip_mouse_gesture>,
             <&zip_x_scaler 0 1>,
-            <&zip_y_scaler 1 15>,
             <&zip_xy_to_scroll_mapper>,
             <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,
-            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>;
+            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,
+            <&scroll_inertia_left>,
+            <&zip_scroll_scaler 1 15>;
     };
 
 / {
